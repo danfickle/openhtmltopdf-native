@@ -13,10 +13,12 @@ Create the instance and SSH into it:
 + `sudo yum install graalvm21-ee-11`
 + `sudo yum-config-manager --add-repo=http://yum.oracle.com/repo/OracleLinux/OL8/codeready/builder/aarch64`
 + `sudo yum install graalvm21-ee-11-native-image`
-+ Clone this repo.
-+ Enter app directory.
++ `git clone https://github.com/danfickle/openhtmltopdf-native.git`
++ `cd openhtmltopdf-native`
++ `chmod u+x build.sh`
++ `chmod u+x mvnw`
 + `./build.sh`
-+ Enter `target` folder.
++ `cd target`
 + `./com.example.app` to run, will produce `test.pdf`.
 + At the moment testing consists of downloading `test.pdf` with `scp` and confirming it opens.
 
